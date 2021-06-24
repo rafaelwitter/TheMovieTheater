@@ -1,4 +1,8 @@
 {
+  "name": "TheMovieTheater",
+  "version": "1.0.0",
+  "description": "TheMovieTheater is a moovie theater and want to let yours clients see details in a web mobile app.",
+  "author": "Rafael N Witt",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
     "start": "expo start",
