@@ -30,13 +30,13 @@ export default class moovieDetailsScreen extends React.Component {
           <Text style={styles.moovieDetails}>Moovie Duration: {duration}</Text>
         </View>         
         <View style={styles.button} >
-          <Button title="Voltar" onPress={() => navigate('moovieList')} />
+          <Button title="Back page" onPress={() => navigate('moovieList')} />
         </View>
         <View style={styles.button}>
           <Button onPress={() => Linking.openURL('https://www.youtube.com/watch?v=9xXElwPu2QI&ab_channel=Itami%E6%B0%B8%E4%B9%85')} 
-            title="Ver trailer" />
+            title="Watch the trailer" />
           <Button onPress={() => Linking.openURL('tel:${phone}')}
-            title="Ligar" />
+            title="Buy your tickets" />
         </View>
       </View>
     );
