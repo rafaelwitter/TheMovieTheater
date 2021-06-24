@@ -1,25 +1,16 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import * as React from 'react';
+import {createAppContainer} from 'react-navigation';
+import {createStackNavigator} from 'react-navigation-stack';
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text style={styles.Title}>Welcome to the Cinepolis!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
+import ContactListScreen from './ContactList'
+import ContactDetailsScreen from './ContactDetails'
+import HomeScreen from './Home'
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#000',
-    alignItems: 'center',
-    justifyContent: 'top',
-  },
-  Title: {
-    fontSize: 20,
-    color: '#FFF'
-  },
-});
+const MainNavigator = createStackNavigator({
+  Home: {screen: HomeScreen},
+  ContactList: {screen: ContactListScreen},
+  ContactDetails: {screen: ContactDetailsScreen},
+}); 
+ 
+const App = createAppContainer(MainNavigator);
+export default App;
