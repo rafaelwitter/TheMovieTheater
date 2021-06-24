@@ -115,3 +115,7 @@ web-build/
 
 # macOS
 .DS_Store
+
+
+# DB
+.mockend.json
