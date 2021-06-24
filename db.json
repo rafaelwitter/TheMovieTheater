@@ -1,8 +1,8 @@
 [
-    {
-        "id": 1,
-        "name": "",
-        "director": "",
-        "duration": ""
-    }
+   User: {
+            "id": 1,
+            "name": "",
+            "director": "",
+            "duration": ""
+        }
 ]
